@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+/* Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*--------------body----------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color:#ebebeb;
+}
+
+.logo-main{
+    width:250px;
+}
+
+.header-style{
+    background-color: #EAC926;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+header div.contenedor-logo
+header .form
+header .comprar-cuota{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    justify-content: space-between;
+}
+
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+
+header .form .input{
+    background-color: white;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+.navbar{
+    
+    display: none;
+}
+
+.navul{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    
+}
+
+.navul li a{
+    color: #000;
+    text-decoration: none;
+
+}
+
+
+
+header .comprar-cuota{
+    width: 100%;
+}
+
+.burger-menu{
+    width: 35px;
+    height: 35px;
+    background-color: #1259c3;
+    font-size: 25px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    height: auto;
+    border-radius: 5px;
+    padding: 3px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu:hover .navegacion{
+    display: block;
+}
+
+.banner-main{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+
+/*-------------main------------------*/
+.title-section{
+    font-size: 24px;
+}
+
+.last-visit{
+    
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/*----truck-----*/
+
+
+.main-article .fas:hover{
+    transform: rotate(-90deg);
+}
+.main-article .fas{
+    display: block;
+    color: #39b54a;
+    padding: 9px;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    margin: 0px;
+    width: 37px;
+    text-align: inherit;
+    position: relative;
+    bottom: 65px;
+    left: 300%;
+    transition: all 500ms;
+    box-sizing: border-box;
+
+}
+
+.full-desc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+.price{
+    display: flex;
+    font-size: 18px;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.discount{
+    font-size: 18px;
+    color: #39b54a;
+    width: 20px;
+    margin: 18px;
+}
+
+.description {
+    font-size: 18px;
+    display: none;
+}
+
+.h4{
+    font-weight: bold;
+}
+
+.main-section{
+    width: 90%;
+    margin: auto;
+}
+
+.item-list li{
+    flex-direction: row;
+}
+
+.products{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.photo-product{
+    width: 80%;
+    margin: 10%;
+    border-bottom: solid 1px #ebebeb;
+    box-sizing: border-box;
+}
+
+.product{
+    margin-bottom: 10px;
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    font-size: 16px;
+    width: 100%;
+    transition: all 350ms;
+    box-sizing: border-box;
+}
+
+.main-article{
+    padding: 15px;
+    background-color: white;
+    width: 80px;
+}
+
+
+/*------------------footer---------------------*/
+footer{
+    width: 100%;
+    text-align: center;
+    margin: 40px;
+    padding: 0;
+}
+
+footer.section{
+    margin: auto;
+}
+
+.pago-title{
+    font-weight: bold;
+    font-size: 15px;
+} 
+
+.pago-tarjeta i{
+    color: #1259c3;
+    font-size: 20px;
+}
+
+.envio-title{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.envio-gratis i{
+    color: #1259c3;
+    font-size: 20px;
+}
+
+.seguridad-title{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.seguridad-footer i{
+    color: #1259c3;
+    font-size: 20px;
+}
+
+/*------------------media---------------------*/
+
+@media (min-width:361px){
+
+    
+    header div.contenedor-logo
+    header .form ,
+    header .comprar-cuota{
+        width: 30%;
+    }
+
+    .product{
+        width: 45%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        margin: 5px;
+    }
+    .products{
+        width: 90%;
+    }
+
+    .main-article{
+        padding: 5px;
+    }
+    
+    .description {
+        display: block;
+        font-size: 10px;
+
+    }
+    .discount{
+        font-size: 10px;
+        margin: 0;
+    }
+    .price{
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .navbar{
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+
+@media (min-width:769px) {
+    
+    .burger-menu {
+        color: olive;
+        width: 60px;
+        margin: auto;
+    }
+    
+    .product{
+        width: 25%;
+        margin-right: 10px;
+    }
+
+    .full-desc{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .description {
+        display: flex;
+        font-size: 18px;
+
+    }
+    .discount{
+        display: flex;
+        font-size: 16px;
+        margin: 0;
+    }
+    .price{
+        display: flex;
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+/* register */
+.form{
+    text-align: center;
+    font-size: 16px;
+}
+
+.form-field{
+    padding: 15px;
+}
