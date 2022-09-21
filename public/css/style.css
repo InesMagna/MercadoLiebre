@@ -159,11 +159,12 @@ main{
 .full-desc{
     display: flex;
     flex-direction: row;
+
     align-items: center;
     margin: 10px;
     
 }
-
+ 
 .price{
     display: flex;
     font-size: 18px;
@@ -247,6 +248,8 @@ footer.section{
 .pago-tarjeta i{
     color: #1259c3;
     font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 2em
 }
 
 .envio-title{
@@ -257,6 +260,8 @@ footer.section{
 .envio-gratis i{
     color: #1259c3;
     font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 2em
 }
 
 .seguridad-title{
@@ -267,6 +272,8 @@ footer.section{
 .seguridad-footer i{
     color: #1259c3;
     font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 2em
 }
 
 /*------------------media---------------------*/
@@ -281,12 +288,12 @@ footer.section{
     }
 
     .product{
-        width: 45%;
+        width: 50%;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         margin: 5px;
     }
     .products{
-        width: 90%;
+      
     }
 
     .main-article{
@@ -316,6 +323,9 @@ footer.section{
     }
 
 
+
+}
+
 @media (min-width:769px) {
     
     .burger-menu {
@@ -325,13 +335,22 @@ footer.section{
     }
     
     .product{
-        width: 25%;
+        width: 23%;
         margin-right: 10px;
     }
 
-    .full-desc{
+    .products{
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-between;
+    }
+
+    .full-desc{
+        border-top: 1px solid #ebebeb;
+        background-color: #fff;
+        padding: 15px;
+        position: relative;
     }
     
     .description {
@@ -348,6 +367,10 @@ footer.section{
         display: flex;
         font-size: 16px;
         margin: 0;
+    }
+
+    .main-article .fas{
+        left: 260px;
     }
 }
 
