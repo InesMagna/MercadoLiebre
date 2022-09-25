@@ -85,11 +85,11 @@
             </div>
             <div class="form-field">
                 <label for="Password">Contraseña</label>
-                <input type="password" id="password" placeholder="Ingrese su contraseña">
+                <input type="password" name="password" class="password" placeholder="Ingrese su contraseña" minlength="8">
             </div>
             <div class="form-field">
                 <label for="Passwordconf">Confirmar contraseña</label>
-                <input type="passconf" id="passconf" placeholder="Ingrese su contraseña">
+                <input type="password" name="password" class="password" placeholder="Ingrese su contraseña" minlength="8">
             </div>
             <div class="form-field">
                 <label for="">Categorias de interés</label>
@@ -116,18 +116,19 @@
 
         </form>
     </main>
-    <footer class="footer">
+    <div class="footer">
         <section class="pago-tarjeta">
             <i class="fas fa-credit-card"></i>
             <p class="pago-title">Pagá con tarjeta o en efectivo</p>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
-                seguro!</p>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                siempre es seguro!</p>
         </section>
 
         <section class="envio-gratis">
             <i class="fas fa-gift"></i>
             <p class="envio-title">Envío gratis desde $ 2.500</p>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                beneficio de
                 Mercado Puntos.</p>
         </section>
 
@@ -137,10 +138,11 @@
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
                 protegid@.</p>
         </section>
+    </div>
 
-        <section class="copyright-footer">
-            Copyright © 1999-2020 MercadoLiebre S.R.L.
-        </section>
+    <section class="copyright-footer">
+        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </section>
 
     </footer>
 </body>

@@ -69,24 +69,29 @@ header .form .input{
     display: flex;
     min-width: 100px;
     padding: 10px;
+    border: none;
+    padding: 8px 28px 8px 8px;
+    font-size: 13px;
+    border-radius: 5px;
 }
 
 .search-icon {
     position: absolute;
-    top: 6px;
-    left: 250px;
+    top: 13px;
+    left: 210px;
     width: 14px;
 }
 
 .search {
     border: 1px solid grey;
     border-radius: 5px;
-    height: 20px;
+    height: 25px;
     width: 100%;
     padding: 2px 23px 2px 30px;
     outline: 0;
     background-color: #f5f5f5;
 }
+
 .search:hover, .search:focus {
     border: 1.5px solid #009688;
     background-color: white;
@@ -196,6 +201,7 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
  
 .price{
@@ -207,13 +213,13 @@ main{
 .discount{
     font-size: 18px;
     color: #39b54a;
+    padding: 7px;
 }
 
 .description {
-    font-size: 16px;
+    font-size: 12px;
     display: none;
-    display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .h4{
@@ -264,9 +270,13 @@ main{
 
 
 /*------------------footer---------------------*/
-footer{
+.footer{
     text-align: center;
-    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 footer.section{
@@ -308,10 +318,13 @@ footer.section{
     margin-bottom: 10px;
     font-size: 2em
 }
-
+.copyright-footer{
+    display: flex:
+    text-align: center;
+}
 /*------------------media---------------------*/
 
-@media (min-width:361px){
+@media (min-width:320px){
 
     
     header div.contenedor-logo
@@ -325,6 +338,22 @@ footer.section{
         margin: 5px;
         margin-top: 10px;
         width: 100%;
+    }
+    
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+        margin: 5%;
     }
     
 
@@ -377,11 +406,29 @@ footer.section{
         justify-content: space-between;
     }
     .full-desc{
-        background-color: #fff;
+        border-top: solid 1px #ebebeb;
         padding: 15px;
+        box-sizing: border-box;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
         position: relative;
     }
-    
+
+    .pago-tarjeta{
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .envio-gratis{
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .seguridad-footer{
+        padding: 10px;
+        box-sizing: border-box;
+    }
 
     .description {
         display: flex;
@@ -403,6 +450,14 @@ footer.section{
         left: 80%;
         bottom: 55px;
     }
+
+    .footer{
+        text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 /* register */
@@ -413,4 +468,20 @@ footer.section{
 
 .form-field{
     padding: 15px;
+}
+
+/*login*/
+
+.login-section{
+    text-align: center;
+    font-size: 16px;
+    padding: 40px;
+}
+
+.login-usuario{
+
+}
+
+.login-password{
+    
 }
